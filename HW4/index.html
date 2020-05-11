@@ -1,6 +1,19 @@
 <h1>Enter URL for list of tallest buildings JSON File</h1>
+<style>
+    h1 {text-align: center;}
+    input {text-align: center;}
+    div.form
+    {
+        display: block;
+        text-align: center;
+    }
+    
+
+</style>
 <script src="index.js"></script>
-<form id="url_form" method="GET" >
-    <input type="text" id="URL" name="URL" value="buildinglist.json"/><br>
-<input type="button" value="Submit Querry" name="submit" onclick="viewJSON(this.form)"/>
-</form>
+<div class="form">
+    <form id="url_form" method="GET" >
+        <input type="text" id="URL" name="URL" maxlength="255" size="50" value="buildinglist.json" /><br>
+    <input type="button" value="Submit Querry" name="submit" onclick="viewJSON(this.form)"/>
+    </form>
+</div>
